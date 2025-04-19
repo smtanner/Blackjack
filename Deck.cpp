@@ -35,7 +35,6 @@ Deck::Deck() {
 void Deck::shuffleDeck() {
     random_device rd;
     mt19937 gen(rd());
-    gen.seed(0);
     shuffle(m_cardDeck.begin(),m_cardDeck.end(),gen);
 
 }
